@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.myapplication.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:scrollHorizontally="true"
+        android:focusableInTouchMode="true"
+        android:layout_centerInParent="true"
+        android:textColor="#0551A5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:singleLine="true"/>
+    <!--android:focusable="true"是否获取焦点-->
+    <!--focusableInTouchMode：通过触摸获取焦点-->
+    <!--android:ellipsize="marquee"设置为跑马灯-->
+    <!--android:marqueeRepeatLimit="marquee_forever"滚动次数里面可以直接写数字-->
+    <!--marquee_forever表示永远滚动-->
+    <!--android:scrollHorizontally="true"水平滚动-->
+    <!--android:singleLine="true"单行输入-->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</RelativeLayout>
